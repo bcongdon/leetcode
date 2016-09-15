@@ -34,4 +34,19 @@ class Solution(object):
         return new_pivot
 
 # Explanation
-# TODO
+# The task is to find the kth largest element for a given array. We can use
+# a partitioning system similar to quicksort to achieve this without sorting.
+# We simply use a similar system to QuickSort, wherein we pick a random pivot,
+# and partition the list into sublists. We're guaranteed that the new_pivot is
+# sorted correctly in the list. Thus, we do a binary-search-esque approach to
+# keep partitioning until we get new_pivot == k. Then, just return the current
+# value at nums[k].
+
+# Runtime - Worst: O(n^2), Average: O(nlogn)
+# Just like with Quicksort, we could get very unlucky with our random pivot
+# indices, and end up having to sort the entire array to get k. However,
+# on average, we will run a fraction of the entire Quicksort, so runtime will
+# be something like O(nlogn / c), which is O(nlogn)
+
+# Space Complexity - O(1)
+# The soriting / partitioning operation is done in place.
