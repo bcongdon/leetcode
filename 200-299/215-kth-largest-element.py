@@ -49,4 +49,4 @@ class Solution(object):
 # be something like O(nlogn / c), which is O(nlogn)
 
 # Space Complexity - O(1)
-# The soriting / partitioning operation is done in place.
+# The sorting / partitioning operation is done in place.
