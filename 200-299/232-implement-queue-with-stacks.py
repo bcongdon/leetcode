@@ -45,6 +45,10 @@ class Queue(object):
 # to output, take all of the elements in the 'in' stack and put them in the
 # 'out' stack. The result is queue behavior.
 
-# Runtime
+# Runtime:
+# Push  - O(1)
+# Pop   - O(n)
+# Peek  - O(n)
+# Empty - O(1)
 
 # Space Complexity - O(n)
