@@ -19,7 +19,7 @@ class Solution(object):
 # lrg - maximum positive product up to the current pos
 #
 # 'sml' and 'lrg' both have to be maintained because maximum products can be
-# attained by multiplying to large-magnatude negative numbers
+# attained by multiplying to large-magnitude negative numbers
 
 # Given [2,3,-2,4,6]
 #     sml =  2, lrg =   2, mx = 2
